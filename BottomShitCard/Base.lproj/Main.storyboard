@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Shabnam-Bold.ttf">
+            <string>Shabnam-Bold</string>
+        </array>
+        <array key="Shabnam-Light.ttf">
+            <string>Shabnam-Light</string>
+        </array>
+        <array key="Shabnam.ttf">
+            <string>Shabnam</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BottomShitCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark-duffel-416969-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="UBJ-2P-Zdd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTt-U0-nzx">
+                                <rect key="frame" x="115.5" y="701.5" width="183" height="40.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OpenBottomShit">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGn-aC-RDH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTt-U0-nzx" secondAttribute="bottom" constant="120" id="4oh-3E-kGa"/>
+                            <constraint firstItem="UBJ-2P-Zdd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KNJ-vH-j5U"/>
+                            <constraint firstItem="sTt-U0-nzx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KtL-8S-xDe"/>
+                            <constraint firstAttribute="bottom" secondItem="UBJ-2P-Zdd" secondAttribute="bottom" id="O8f-2s-g1x"/>
+                            <constraint firstItem="UBJ-2P-Zdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bxA-H8-Yyn"/>
+                            <constraint firstItem="UBJ-2P-Zdd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z2T-nD-81J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="94"/>
+        </scene>
+        <!--Bottom Shit View Controller-->
+        <scene sceneID="Tyz-qp-iYU">
+            <objects>
+                <viewController storyboardIdentifier="BottomShitStoryboard" id="l5a-c5-myr" customClass="BottomShitViewController" customModule="BottomShitCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e9Q-8s-KYw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYT-0T-QpE">
+                                <rect key="frame" x="0.0" y="286" width="414" height="576"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFI-eC-hSk">
+                                        <rect key="frame" x="93" y="8" width="202" height="8"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="BasketCodeVerifictaionButton"/>
+                                        <color key="tintColor" name="MainColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select payment method:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLK-qF-M5K">
+                                        <rect key="frame" x="60" y="24" width="269" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3N-dY-5b7">
+                                        <rect key="frame" x="28" y="311" width="335" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gQY-Kn-rNN">
+                                                <rect key="frame" x="256" y="40" width="71" height="87"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internet payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO5-AI-841">
+                                                <rect key="frame" x="134" y="62" width="114" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment with all member cards" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5j-A2-iMk">
+                                                <rect key="frame" x="80" y="90" width="168" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Shabnam-Light" family="Shabnam" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMR-nf-mFg">
+                                                <rect key="frame" x="0.0" y="8" width="335" height="151"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="SecondViewAction:" destination="l5a-c5-myr" eventType="touchUpInside" id="Uft-3c-2oW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH0-Wr-1Sw">
+                                        <rect key="frame" x="99" y="509" width="230" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="پرداحت پرداحت پرداحت پرداحت">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" title="Payment">
+                                            <fontDescription key="titleFontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHL-Kf-dM3">
+                                        <rect key="frame" x="28" y="92" width="335" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mail.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9jg-j9-AL9">
+                                                <rect key="frame" x="244" y="51" width="83" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemTealColor"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment from the wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vE-sG-XWg">
+                                                <rect key="frame" x="49" y="51" width="163" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your wallet balance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZz-fZ-WEu">
+                                                <rect key="frame" x="86" y="85" width="108" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Shabnam-Light" family="Shabnam" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKh-UB-5eF">
+                                                <rect key="frame" x="8" y="8" width="319" height="160"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="FirstViewAction:" destination="l5a-c5-myr" eventType="touchUpInside" id="UqW-vG-h7N"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="576" id="Y3z-vo-ovp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J5T-mg-Gog"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J5T-mg-Gog" firstAttribute="trailing" secondItem="qYT-0T-QpE" secondAttribute="trailing" id="Kt0-Gg-cbv"/>
+                            <constraint firstItem="J5T-mg-Gog" firstAttribute="bottom" secondItem="qYT-0T-QpE" secondAttribute="bottom" id="hJF-N4-CDf"/>
+                            <constraint firstItem="qYT-0T-QpE" firstAttribute="leading" secondItem="J5T-mg-Gog" secondAttribute="leading" id="s5m-at-yEZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BottomView" destination="qYT-0T-QpE" id="a68-gz-HjM"/>
+                        <outlet property="FirstButtonView" destination="zHL-Kf-dM3" id="Eez-WJ-ktZ"/>
+                        <outlet property="FirstViewActionButton" destination="dKh-UB-5eF" id="tcP-5l-Srx"/>
+                        <outlet property="IntenetExplationText" destination="q5j-A2-iMk" id="1O9-kw-Qb6"/>
+                        <outlet property="InternetPaymentImage" destination="gQY-Kn-rNN" id="hgD-lY-1CC"/>
+                        <outlet property="InternetPaymentText" destination="ZO5-AI-841" id="Nbq-bG-gzM"/>
+                        <outlet property="LineView" destination="iFI-eC-hSk" id="ioD-Gq-Ol1"/>
+                        <outlet property="PaymentButton" destination="DH0-Wr-1Sw" id="iEA-2q-b9C"/>
+                        <outlet property="PaymentSelectionText" destination="qLK-qF-M5K" id="t8J-wC-pf2"/>
+                        <outlet property="SecondButtonView" destination="e3N-dY-5b7" id="Uj7-0w-uGD"/>
+                        <outlet property="SecondViewActionButton" destination="RMR-nf-mFg" id="mCF-Li-hfK"/>
+                        <outlet property="WalletAmountText" destination="lZz-fZ-WEu" id="xm3-lI-Qf3"/>
+                        <outlet property="WalletPaymentImage" destination="9jg-j9-AL9" id="FHd-EW-wja"/>
+                        <outlet property="WalletPaymentText" destination="2vE-sG-XWg" id="Jwd-Wh-wjZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnN-wp-OSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.71014492753625" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="mail.fill" catalog="system" width="128" height="93"/>
+        <image name="mark-duffel-416969-unsplash" width="4410" height="3150"/>
+        <namedColor name="BasketCodeVerifictaionButton">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
